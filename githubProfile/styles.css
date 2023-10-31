@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2a5470;
+  background-image: linear-gradient(315deg, #2a5470 0%, #4c4177 74%);
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+input {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.main-card {
+  background-color: #2a5470;
+  background-image: linear-gradient(315deg, #4c4177 0%, #2a5470 74%);
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.5px);
+  background-color: #2a5470;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50rem;
+  margin: 50px auto;
+  padding: 0.5rem 2rem;
+  border-radius: 30px;
+  color: rgba(255, 255, 255, 0.767);
+}
+
+.main-card img {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+  margin-right: 2rem;
+  border: 1rem solid #0b2738;
+}
+
+.main-card .name h2 {
+  margin: 20px 0 0 0;
+}
+
+.main-card .description p {
+  font-size: 1.2rem;
+}
+
+.main-card .info {
+  list-style: none;
+  display: flex;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.main-card .info li {
+  margin-right: 20px;
+}
+/* 
+.repository {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+} */
+
+.repository a {
+  background-color: #0b2738;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.repository a:hover {
+  background-color: #04131d;
+}

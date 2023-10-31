@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ece9e6;
+}
+
+img {
+  cursor: pointer;
+}
+
+.mobile-container {
+  width: 350px;
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+header input {
+  border: none;
+  background-color: rgba(202, 195, 195, 0.541);
+  padding: 5px;
+  margin-right: 5px;
+  outline: none;
+}
+
+header button {
+  border: none;
+  font-size: 1.2rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+header button:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.fav-container {
+  text-align: center;
+  background-color: #f8e3c9;
+  padding: 1rem;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.fav-meals {
+  display: flex;
+  list-style-type: none;
+  padding: 0 2rem;
+}
+
+.fav-container h3 {
+  margin-bottom: 25px;
+}
+
+.fav-meals li {
+  position: relative;
+  width: 80px;
+}
+
+.fav-meals li img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid white;
+  object-fit: cover;
+}
+
+.fav-meals li span {
+  display: inline-block;
+  font-size: 1rem;
+  text-overflow: ellipsis;
+}
+
+.fav-meals li .clear {
+  background-color: transparent;
+  position: absolute;
+  top: -0.5rem;
+  right: 0px;
+  border: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.fav-meals li:hover .clear {
+  opacity: 1;
+}
+
+.random-meal {
+  position: relative;
+  box-shadow: 0 0 10px 3px #3333331a;
+  margin: 1.5rem;
+  border: 1px solid white;
+}
+
+.random-meal span {
+  display: inline-block;
+  position: absolute;
+  background-color: white;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  top: 30px;
+  left: 0px;
+  border-radius: 2px;
+}
+
+.random-meal img {
+  margin: 0 auto;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+.random-meal .description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.random-meal h3 {
+  font-size: 0.7rem;
+  margin: 0;
+}
+
+.description button {
+  font-size: 1.2rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: rgba(180, 170, 170, 0.719);
+}
+
+.description button.active {
+  color: black;
+}
+
+.meal-info-container {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.meal-info {
+  box-shadow: 0 0 10px 3px #3333331a;
+  position: relative;
+  width: 25rem;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  border: 1px solid white;
+  background-color: white;
+}
+
+.meal-info .clear {
+  background-color: transparent;
+  position: absolute;
+  top: -0.3rem;
+  right: -8px;
+  border: none;
+  opacity: 1;
+  cursor: pointer;
+  font-size: 20px;
+  color: black;
+}
+
+.meal-info .clear:hover {
+  color: white;
+  background-color: red;
+}
+
+.meal-info .description p {
+  max-height: 40vh;
+  overflow: scroll;
+}
+
+.meal-info img {
+  margin: 0 auto;
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
+}
+
+.meal-info .ingredients {
+  list-style: none;
+  padding: 0;
+}
